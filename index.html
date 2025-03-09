@@ -61,65 +61,49 @@
             display: none;
         }
 
-        .skills {
+        .home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 20px;
             background-color: #f4f4f4;
-            padding: 50px 20px;
-            text-align: center;
+            height: 100vh;
         }
 
-        .skills h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
+        .home-content {
+            max-width: 500px;
         }
 
-        .skills .progress {
-            margin-bottom: 20px;
+        .home-content h3 {
+            font-size: 24px;
         }
 
-        .portfolio {
-            padding: 50px 20px;
-            text-align: center;
+        .home-content h1 {
+            font-size: 40px;
+            font-weight: bold;
         }
 
-        .portfolio h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
+        .home-content h3 span {
+            color: #3498db;
         }
 
-        .portfolio-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+        .social-media {
+            margin-top: 20px;
         }
 
-        .portfolio-box {
-            position: relative;
+        .social-media a {
+            font-size: 24px;
+            color: #333;
+            margin-right: 20px;
         }
 
-        .portfolio-box img {
-            width: 100%;
+        .social-media a:hover {
+            color: #3498db;
+        }
+
+        .home-img img {
+            max-width: 100%;
             border-radius: 10px;
-        }
-
-        .portfolio-layer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            color: #fff;
-            border-radius: 0 0 10px 10px;
-        }
-
-        .portfolio-layer h4 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .portfolio-layer a {
-            color: #fff;
-            font-size: 18px;
         }
 
         .footer {
@@ -129,26 +113,19 @@
             padding: 20px 0;
         }
 
-        .footer-iconTop a {
-            color: #fff;
-            font-size: 24px;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-
-        .footer-iconTop a:hover {
-            color: #f4f4f4;
+        .footer-text {
+            margin-bottom: 10px;
         }
 
         @media (max-width: 768px) {
-            .portfolio-container {
-                grid-template-columns: repeat(2, 1fr);
+            .home {
+                flex-direction: column;
+                text-align: center;
             }
-        }
 
-        @media (max-width: 480px) {
-            .portfolio-container {
-                grid-template-columns: 1fr;
+            .home-content {
+                text-align: center;
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -168,6 +145,7 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
@@ -183,7 +161,7 @@
         </div>
         <div class="home-img">
             <center>
-                <img src="C:\Users\USER\Downloads\image.jpeg" alt="Home Image">
+                <img src="https://i.imgur.com/zZj5grb.jpeg" alt="Home Image">
             </center>
         </div>
     </section>
@@ -252,7 +230,7 @@
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="https://via.placeholder.com/300x200" alt="Food Blog">
+                <img src=https://img.freepik.com/premium-photo/product-shots-fast-shutter-speed-food-photograph_670382-78660.jpg alt="Food Blog">
                 <div class="portfolio-layer">
                     <h4>Food Blog</h4>
                     <p>In this project, I created my own food blog website to showcase different recipes and ways to prepare them.</p>
@@ -260,7 +238,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://via.placeholder.com/300x200" alt="Tribute Page">
+                <img src=https://img.freepik.com/premium-photo/enigmatic-essence-rabindranath-tagore-portrait-photography_1021945-8434.jpg alt="Tribute Page">
                 <div class="portfolio-layer">
                     <h4>Tribute Page</h4>
                     <p>In this project, I created a tribute page to a famous Indian person.</p>
@@ -268,7 +246,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://via.placeholder.com/300x200" alt="Shopping Mall">
+                <img src=https://www.shutterstock.com/image-photo/modern-shopping-mall-600w-2467276437.jpg alt="Shopping Mall">
                 <div class="portfolio-layer">
                     <h4>Shopping Mall</h4>
                     <p>In this project, I built a webpage for a unique shopping mall.</p>
@@ -276,7 +254,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://via.placeholder.com/300x200" alt="Cab Booking">
+                <img src=https://img.freepik.com/premium-photo/small-scale-day-time-city-traffic-scene-woman-stop-taxi-smartphone-screen-book-cab-app_587981-9155.jpg alt="Cab Booking">
                 <div class="portfolio-layer">
                     <h4>Cab Booking</h4>
                     <p>This project allows users to book a cab using Java.</p>
@@ -289,7 +267,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-text">
-            <p>&copy; Copyright by Bhargav 2025 My Portfolio</p>
+            <p>&copy; 2025 Bhargav. All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
@@ -319,6 +297,3 @@
 </body>
 
 </html>
-
-
-
